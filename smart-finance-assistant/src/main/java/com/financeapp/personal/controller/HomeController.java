@@ -28,6 +28,7 @@ public class HomeController {
     }
     
     private void createTestData() {
+        System.out.println("CREATING TEST DATA =====================");
         // Check if test user already exists
         if (userService.findByEmail("test@example.com").isEmpty()) {
             // Create test user
