@@ -57,6 +57,7 @@ public class AccountController {
     public String showNewAccountForm(Model model) {
         model.addAttribute("accountForm", new AccountForm());
         model.addAttribute("accountTypes", Account.AccountType.values());
+        model.addAttribute("editing", false);
         return "accounts/form";
     }
     
